@@ -1,0 +1,71 @@
+.hang-list {
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 0;
+    @media screen and (min-width: 768px) {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+
+.hang-list__item {
+    justify-content: center;
+    
+    @media screen and (min-width: 768px) {
+        margin: 15px;
+        width: calc((100% - 4*15px)/2);
+    }
+        @media screen and (min-width: 1200px) {
+            margin-right: 15px;
+            margin-left: 15px;
+            width: calc((100% - 8*15px)/4);
+        }
+&:not(:last-child) {
+    margin-bottom: 30px; 
+}
+&::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $secondary-bkg-color;
+    border-radius: 4px;
+}
+}
+
+.hang-list__title {
+    text-align: center;
+    color: $secondary-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin: 0;
+
+    padding-bottom: 10px;
+}
+
+.hang-list__text {
+    font-size: 14px;
+    line-height: 1.71;
+    margin: 0;
+
+}
+
+.icon-radar::before {
+    background-image: url(../images/icon-radar.svg);
+
+}
+
+.icon-clock::before {
+    background-image: url(../images/icon-clock.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/icon-diagram.svg);
+}
+
+.icon-austronaut::before {
+    background-image: url(../images/icon-astronaut.svg);
+}

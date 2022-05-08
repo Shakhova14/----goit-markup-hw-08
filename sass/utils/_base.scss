@@ -1,0 +1,76 @@
+body {
+    color: $primary-text-color;
+    background-color: $primary-white-color;
+    font-family: roboto, sans-serif;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: inherit;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        
+    }
+}
+
+.no-padding {
+        padding-bottom: 0;
+        }
+
+
+
+.container {
+    outline: 1px solid red;
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 0 15px;
+    @media screen and (min-width: 480px) {
+        width: 480px;
+        
+    }  
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        
+    }
+    }
+
+
+.section-title {
+    color: $secondary-text-color;
+    margin: 0;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+
+.hide {
+    display: none;
+    
+}
+
+.mobile-hide 
+{ 
+    color: grey;
+    @media screen and (max-width: 1199px) {
+        display: none;} 
+}
